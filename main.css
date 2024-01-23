@@ -1,26 +1,45 @@
-#container, #breed-area-player, #playerField, #memoryGauge {
+#playerHand, #breed-area-player, #playerField, #cpuHand, #breed-area-cpu, #cpuField {
 	display:flex;
 	justify-content:center;
 	flex-wrap: wrap;
 }
-#container > div {
+#playerHand > div {
 	border:1px solid black;
+	height:110px;
+	width:85px;
+}
+#breed-area-player > div, #breed-area-cpu > div {
+	border: 1px solid black;
+	height:75px;
+	width:50px;
+	margin-bottom: 25px;
+}
+#playerField > div, #cpuField > div{
+	border: 1px solid black;
 	height:140px;
 	width:100px;
+	margin-bottom: 25px;
 }
-#breed-area-player > div {
-	border: 1px solid black;
-	height:175px;
-	width:125px;
-	margin-bottom: 5%;
-}
-#playerField > div{
-	border: 1px solid black;
-	height:210px;
-	width:150px;
-	margin-bottom: 5%;
+#memoryGauge {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
 }
 #memoryGauge > li{
 	flex-direction:row;
 	list-style: none;
+	border:1px solid black;	
+	padding:10px;
+	margin:10px;
+	border-top-right-radius: 30%;
+	border-bottom-left-radius: 30%;
+	background-color:black;
+	color:red;
+	font-weight:bold;
+}
+#cpuHand > div {
+	border: 1px solid black;
+	height:110px;
+	width:85px;
+	margin-bottom: 25px;
 }
