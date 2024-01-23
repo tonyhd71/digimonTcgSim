@@ -1,0 +1,26 @@
+#container, #breed-area-player, #playerField, #memoryGauge {
+	display:flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+#container > div {
+	border:1px solid black;
+	height:140px;
+	width:100px;
+}
+#breed-area-player > div {
+	border: 1px solid black;
+	height:175px;
+	width:125px;
+	margin-bottom: 5%;
+}
+#playerField > div{
+	border: 1px solid black;
+	height:210px;
+	width:150px;
+	margin-bottom: 5%;
+}
+#memoryGauge > li{
+	flex-direction:row;
+	list-style: none;
+}
