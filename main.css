@@ -42,4 +42,34 @@
 	height:110px;
 	width:85px;
 	margin-bottom: 25px;
+	background-image: url("img/backOfCard2.png");
+	margin-left: 2px;
+}
+#deck {
+	right:20px;
+	position:absolute;
+	margin-left:10px;
+	height:105px;
+	width:75px;
+	margin-top:15px;
+	background-image: url("img/backOfCard.png");
+	border-radius:4px;
+
+}
+#trash {
+	right:120px;
+	position:absolute;
+	height:105px;
+	width:75px;
+	margin-top:15px;
+	background-image: url("img/trash.png");
+	border-radius:8px;
+}
+#secStack {
+	position:absolute;
+	left:150px;
+	border:1px solid black;
+	height:105px;
+	width:75px;
+	margin-top:15px;
 }
