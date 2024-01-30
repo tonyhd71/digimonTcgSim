@@ -12,13 +12,13 @@
 	border: 1px solid black;
 	height:75px;
 	width:50px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 #playerField > div, #cpuField > div{
 	border: 1px solid black;
 	height:105px;
 	width:75px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 #memoryGauge {
 	display:flex;
@@ -29,8 +29,8 @@
 	flex-direction:row;
 	list-style: none;
 	border:1px solid black;	
-	padding:10px;
-	margin:10px;
+	padding:5px;
+	margin:4px;
 	border-top-right-radius: 30%;
 	border-bottom-left-radius: 30%;
 	background-color:black;
@@ -41,7 +41,7 @@
 	border: 1px solid black;
 	height:105px;
 	width:75px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	background-image: url("img/backOfCard2.png");
 	margin-left: 2px;
 }
@@ -66,8 +66,8 @@
 	border-radius:8px;
 }
 #secStack {
-	position:absolute;
-	left:150px;
+	position:relative;
+	left:-15px;
 	border:1px solid black;
 	height:105px;
 	width:75px;

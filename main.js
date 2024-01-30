@@ -11,7 +11,7 @@ class Card {
     this.name = name;
     this.color =  color;
     this.set = set;
-    this.cardType = cardType; //digimon, option, tamer
+    this.cardType = cardType; //digimon, option, tamer, digi-egg
     this.playCost = playCost;
   }
 }
@@ -37,7 +37,14 @@ class Tamer extends Card {
     this.secEff = secEff;
   }
 }
-let jb = new Tamer("JB", "Green", "BT7-089", 3, "bla", "blaa");
+class DigiEgg extends Card {
+  constructor(name, color, set, level, inheritEff) {
+    super(name, color, set);
+    this.level = level;
+    this.inheritEff = inheritEff;
+  }
+}
+let koromon = new DigiEgg("koromon", "Red", "BT14-001", 2, "bla");
 /*UNSUSPEND, DRAW, BREEDING, MAIN ENDTURN*/
 function determineFirst() {
   //determine who goes first
@@ -59,3 +66,4 @@ let playerDeck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT
 let playerEggDeck = ["BT14-001", "BT14-001", "BT14-001", "BT14-001"];
 let cpuEggDeck = ["BT11-006", "BT11-006", "BT11-006", "BT11-006"];
 let cpuDeck = ["EX3-004", "EX3-004", "EX3-004", "EX3-004", "BT11-075", "BT11-075", "BT11-075", "BT11-075", "BT8-110", "BT8-110", "BT10-074", "BT10-074", "BT10-074", "BT10-074", "BT10-079", "BT10-079", "BT10-079", "BT10-079", "EX3-055", "EX3-055","EX3-055","EX3-055", "EX3-003", "EX3-003", "EX3-003", "EX3-003", "BT8-108", "BT8-108", "EX3-010", "EX3-010", "EX3-010", "EX3-010", "EX3-061", "EX3-061", "EX3-061", "EX3-061", "EX3-008", "EX3-008", "EX3-008", "EX3-008", "BT11-079", "BT11-079", "EX3-063", "EX3-063", "EX3-058", "EX3-058", "EX3-058", "EX3-058", "BT11-079", "BT11-079"];
+alert(koromon.level);
