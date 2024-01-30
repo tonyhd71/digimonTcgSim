@@ -30,5 +30,5 @@ class Tamer extends Card {
     this.secEff = secEff;
   }
 }
-let jb = new Tamer("JB", "Green", "BT7-089", "bla", "blaa");
-alert(jb.name);
+let jb = new Tamer("JB", "Green", "BT7-089", 3, "bla", "blaa");
+alert(jb.secEff);
