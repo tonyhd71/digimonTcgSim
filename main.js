@@ -96,13 +96,7 @@ function pickDNAVeemon() {
 }
 function startGame() {
   playArea.hidden=false;
-  hoverArea.hidden=false;
-  let whoStarts = document.getElementsByName('whoStarts');
-  for (i = 0; i < whoStarts.length; i++) {
-    if (whoStarts[i].checked)
-    alert(whoStarts[i].value);
-  }
-        
+  hoverArea.hidden=true;
 }
 //stuff i can do on unsuspend phase
 function unsuspend() {
