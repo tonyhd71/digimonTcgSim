@@ -8,15 +8,16 @@ window.addEventListener("load",
     playArea.hidden=true;
     hoverArea.hidden=false;
   })
-class Deck {
-  constructor(playerID) {
-    this.playerID = playerID;
+class PlayerDeck {
+  constructor() {
+    this.deck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT4-098", "BT4-098", "BT12-017", "BT12-017", "BT12-017", "BT12-017", "BT12-009", "BT12-009", "BT7-081", "BT7-081", "BT12-013", "BT12-013", "BT12-013", "BT1-090", "BT12-012", "BT12-012","BT12-012", "BT12-012","BT8-097", "BT8-097", "BT8-097","BT7-014", "BT7-014", "BT7-014", "BT7-014", "BT14-009", "BT14-009", "BT14-009", "BT7-011", "BT7-011", "BT7-011", "BT7-080", "BT7-080", "BT4-009", "BT5-008", "BT5-008", "BT5-008", "BT5-008", "BT7-008", "BT7-008", "BT7-008", "BT7-085", "BT7-085", "BT7-085", "BT7-085"];
+
   }
-  //draw one card during draw phase at beginning of every turn
 }
-class Hand {
-  constructor(playerID) {
-    this.playerID = playerID;
+class PlayerHand {
+  constructor() {
+    this.hand = [];
+
   }
 }
 class Card {
@@ -75,7 +76,6 @@ function breedPhase() {
 function main() {
   //most logic goes here
 }
-let playerDeck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT4-098", "BT4-098", "BT12-017", "BT12-017", "BT12-017", "BT12-017", "BT12-009", "BT12-009", "BT7-081", "BT7-081", "BT12-013", "BT12-013", "BT12-013", "BT1-090", "BT12-012", "BT12-012","BT12-012", "BT12-012","BT8-097", "BT8-097", "BT8-097","BT7-014", "BT7-014", "BT7-014", "BT7-014", "BT14-009", "BT14-009", "BT14-009", "BT7-011", "BT7-011", "BT7-011", "BT7-080", "BT7-080", "BT4-009", "BT5-008", "BT5-008", "BT5-008", "BT5-008", "BT7-008", "BT7-008", "BT7-008", "BT7-085", "BT7-085", "BT7-085", "BT7-085"];
 let playerEggDeck = ["BT14-001", "BT14-001", "BT14-001", "BT14-001"];
 let cpuEggDeck = ["BT11-006", "BT11-006", "BT11-006", "BT11-006"];
 let cpuDeck = ["EX3-004", "EX3-004", "EX3-004", "EX3-004", "BT11-075", "BT11-075", "BT11-075", "BT11-075", "BT8-110", "BT8-110", "BT10-074", "BT10-074", "BT10-074", "BT10-074", "BT10-079", "BT10-079", "BT10-079", "BT10-079", "EX3-055", "EX3-055","EX3-055","EX3-055", "EX3-003", "EX3-003", "EX3-003", "EX3-003", "BT8-108", "BT8-108", "EX3-010", "EX3-010", "EX3-010", "EX3-010", "EX3-061", "EX3-061", "EX3-061", "EX3-061", "EX3-008", "EX3-008", "EX3-008", "EX3-008", "BT11-079", "BT11-079", "EX3-063", "EX3-063", "EX3-058", "EX3-058", "EX3-058", "EX3-058", "BT11-079", "BT11-079"];
@@ -96,5 +96,29 @@ function pickDNAVeemon() {
 }
 function startGame() {
   playArea.hidden=false;
-  hoverArea.hidden=true;
+  hoverArea.hidden=false;
+  let whoStarts = document.getElementsByName('whoStarts');
+  for (i = 0; i < whoStarts.length; i++) {
+    if (whoStarts[i].checked)
+    alert(whoStarts[i].value);
+  }
+        
+}
+//stuff i can do on unsuspend phase
+function unsuspend() {
+
+}
+//stuff i can do in draw phase
+function draw() {
+
+}
+//stuff i can do in breeding phase
+function moveToBattle() {
+
+}
+function doNothing() {
+
+}
+function digivolve() {
+
 }
