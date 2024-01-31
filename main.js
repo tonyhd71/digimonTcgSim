@@ -94,3 +94,7 @@ function pickDNAVeemon() {
   document.getElementById("firstOrSecond").style.display= "block";
 
 }
+function startGame() {
+  playArea.hidden=false;
+  hoverArea.hidden=true;
+}
