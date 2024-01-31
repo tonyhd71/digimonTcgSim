@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section id="hoverOverCards"></section>
+    <section id="hoverOverCards">
+        <h3>Select a deck to play as</h3>
+        <span id="deckPicker">
+            <a href="#" onclick="pickRedHybrid()"><img id="redHybrid" alt="play using a Red Hybrid deck" src="img/emperorGreymon.png" ></a>
+            <a href="#" onclick="pickDNAVeemon()"><img id="veemonDna" alt="play using a DNA digivolution deck" src="img/imperialdramon.png" ></a>
+        </span>
+    </section>
     <section id="playArea">
         <div id="cpuHand">
         <div class="cpuCard"></div>
@@ -17,7 +23,7 @@
         <div class="cpuCard"></div>
     </div>
     <div id="breed-area-cpu">
-        <div></div>
+        <div class="eggDeck"></div>
         <div></div>
     </div>
     <div id="cpuField">
@@ -31,27 +37,27 @@
     </div>
     <ul id="memoryGauge">
         <li>Main Phase</li>
-        <li>10</li>
-        <li>9</li>
-        <li>8</li>
-        <li>7</li>
-        <li>6</li>
-        <li>5</li>
-        <li>4</li>
-        <li>3</li>
-        <li>2</li>
-        <li>1</li>
+        <li class="cpuMemory">10</li>
+        <li class="cpuMemory">9</li>
+        <li class="cpuMemory">8</li>
+        <li class="cpuMemory">7</li>
+        <li class="cpuMemory">6</li>
+        <li class="cpuMemory">5</li>
+        <li class="cpuMemory">4</li>
+        <li class="cpuMemory">3</li>
+        <li class="cpuMemory">2</li>
+        <li class="cpuMemory">1</li>
         <li>0</li>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
+        <li class="playerMemory">1</li>
+        <li class="playerMemory">2</li>
+        <li class="playerMemory">3</li>
+        <li class="playerMemory">4</li>
+        <li class="playerMemory">5</li>
+        <li class="playerMemory">6</li>
+        <li class="playerMemory">7</li>
+        <li class="playerMemory">8</li>
+        <li class="playerMemory">9</li>
+        <li class="playerMemory">10</li>
         <li>Pass</li>
     </ul>
     <div id="playerField">
@@ -67,7 +73,7 @@
         <span id="trash"></span>
     </div>
     <div id="breed-area-player">
-        <div></div>
+        <div class="eggDeck" ></div>
         <div></div>
     </div>
     <div id="playerHand">

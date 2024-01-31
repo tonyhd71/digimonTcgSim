@@ -4,7 +4,7 @@ let hoverArea = document.getElementById("hoverOverCards");
 window.addEventListener("load",
   (event) => {
     playArea.hidden=true;
-    hoverArea.hidden=true;
+    hoverArea.hidden=false;
   })
 class Deck {
   constructor(playerID) {
@@ -77,3 +77,16 @@ let playerDeck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT
 let playerEggDeck = ["BT14-001", "BT14-001", "BT14-001", "BT14-001"];
 let cpuEggDeck = ["BT11-006", "BT11-006", "BT11-006", "BT11-006"];
 let cpuDeck = ["EX3-004", "EX3-004", "EX3-004", "EX3-004", "BT11-075", "BT11-075", "BT11-075", "BT11-075", "BT8-110", "BT8-110", "BT10-074", "BT10-074", "BT10-074", "BT10-074", "BT10-079", "BT10-079", "BT10-079", "BT10-079", "EX3-055", "EX3-055","EX3-055","EX3-055", "EX3-003", "EX3-003", "EX3-003", "EX3-003", "BT8-108", "BT8-108", "EX3-010", "EX3-010", "EX3-010", "EX3-010", "EX3-061", "EX3-061", "EX3-061", "EX3-061", "EX3-008", "EX3-008", "EX3-008", "EX3-008", "BT11-079", "BT11-079", "EX3-063", "EX3-063", "EX3-058", "EX3-058", "EX3-058", "EX3-058", "BT11-079", "BT11-079"];
+let veemonDeck = document.getElementById("veemonDna");
+let redHybridDeck = document.getElementById("redHybrid");
+
+function pickRedHybrid() {
+  veemonDeck.style.opacity = "0.3";
+  redHybridDeck.style.opacity = "1.0";
+
+}
+function pickDNAVeemon() {
+  redHybridDeck.style.opacity = "0.3";
+  veemonDeck.style.opacity = "1.0";
+
+}
