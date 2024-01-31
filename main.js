@@ -1,10 +1,21 @@
 //all Cards class
+let playArea = document.getElementById("playArea");
+let hoverArea = document.getElementById("hoverOverCards");
+window.addEventListener("load",
+  (event) => {
+    playArea.hidden=true;
+    hoverArea.hidden=true;
+  })
 class Deck {
   constructor(playerID) {
     this.playerID = playerID;
   }
   //draw one card during draw phase at beginning of every turn
-
+}
+class Hand {
+  constructor(playerID) {
+    this.playerID = playerID;
+  }
 }
 class Card {
   constructor(name, color, set, cardType, playCost) {
@@ -66,4 +77,3 @@ let playerDeck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT
 let playerEggDeck = ["BT14-001", "BT14-001", "BT14-001", "BT14-001"];
 let cpuEggDeck = ["BT11-006", "BT11-006", "BT11-006", "BT11-006"];
 let cpuDeck = ["EX3-004", "EX3-004", "EX3-004", "EX3-004", "BT11-075", "BT11-075", "BT11-075", "BT11-075", "BT8-110", "BT8-110", "BT10-074", "BT10-074", "BT10-074", "BT10-074", "BT10-079", "BT10-079", "BT10-079", "BT10-079", "EX3-055", "EX3-055","EX3-055","EX3-055", "EX3-003", "EX3-003", "EX3-003", "EX3-003", "BT8-108", "BT8-108", "EX3-010", "EX3-010", "EX3-010", "EX3-010", "EX3-061", "EX3-061", "EX3-061", "EX3-061", "EX3-008", "EX3-008", "EX3-008", "EX3-008", "BT11-079", "BT11-079", "EX3-063", "EX3-063", "EX3-058", "EX3-058", "EX3-058", "EX3-058", "BT11-079", "BT11-079"];
-alert(koromon.level);
