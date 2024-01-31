@@ -1,6 +1,8 @@
 //all Cards class
 let playArea = document.getElementById("playArea");
 let hoverArea = document.getElementById("hoverOverCards");
+document.getElementById("firstOrSecond").style.display= "none";
+
 window.addEventListener("load",
   (event) => {
     playArea.hidden=true;
@@ -83,10 +85,12 @@ let redHybridDeck = document.getElementById("redHybrid");
 function pickRedHybrid() {
   veemonDeck.style.opacity = "0.3";
   redHybridDeck.style.opacity = "1.0";
+  document.getElementById("firstOrSecond").style.display= "block";
 
 }
 function pickDNAVeemon() {
   redHybridDeck.style.opacity = "0.3";
   veemonDeck.style.opacity = "1.0";
+  document.getElementById("firstOrSecond").style.display= "block";
 
 }

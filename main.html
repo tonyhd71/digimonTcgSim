@@ -13,6 +13,20 @@
             <a href="#" onclick="pickRedHybrid()"><img id="redHybrid" alt="play using a Red Hybrid deck" src="img/emperorGreymon.png" ></a>
             <a href="#" onclick="pickDNAVeemon()"><img id="veemonDna" alt="play using a DNA digivolution deck" src="img/imperialdramon.png" ></a>
         </span>
+        <span>
+            <fieldset id="firstOrSecond">
+                <legend>Select Order to Start:</legend>
+            <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+                <label for="huey">Go First</label>
+            </div>
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">Go Second</label>
+            </div>
+            </fieldset>
+            <button type="button">Start Game</button>
+        </span>
     </section>
     <section id="playArea">
         <div id="cpuHand">
