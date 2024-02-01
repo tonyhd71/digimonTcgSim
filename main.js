@@ -10,10 +10,16 @@ window.addEventListener("load",
   })
 class PlayerDeck {
   constructor() {
-    this.deck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT4-098", "BT4-098", "BT12-017", "BT12-017", "BT12-017", "BT12-017", "BT12-009", "BT12-009", "BT7-081", "BT7-081", "BT12-013", "BT12-013", "BT12-013", "BT1-090", "BT12-012", "BT12-012","BT12-012", "BT12-012","BT8-097", "BT8-097", "BT8-097","BT7-014", "BT7-014", "BT7-014", "BT7-014", "BT14-009", "BT14-009", "BT14-009", "BT7-011", "BT7-011", "BT7-011", "BT7-080", "BT7-080", "BT4-009", "BT5-008", "BT5-008", "BT5-008", "BT5-008", "BT7-008", "BT7-008", "BT7-008", "BT7-085", "BT7-085", "BT7-085", "BT7-085"];
-
+    this.deck = [];
+    let playerCards = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT4-098", "BT4-098", "BT12-017", "BT12-017", "BT12-017", "BT12-017", "BT12-009", "BT12-009", "BT7-081", "BT7-081", "BT12-013", "BT12-013", "BT12-013", "BT1-090", "BT12-012", "BT12-012","BT12-012", "BT12-012","BT8-097", "BT8-097", "BT8-097","BT7-014", "BT7-014", "BT7-014", "BT7-014", "BT14-009", "BT14-009", "BT14-009", "BT7-011", "BT7-011", "BT7-011", "BT7-080", "BT7-080", "BT4-009", "BT5-008", "BT5-008", "BT5-008", "BT5-008", "BT7-008", "BT7-008", "BT7-008", "BT7-085", "BT7-085", "BT7-085", "BT7-085"];
+    for (let i =0; i < playerCards.length; i++) {
+      this.deck.push(playerCards[i]);
+    }
+    //console.log(this.deck);
   }
 }
+   // this.deck = ["BT12-088", "BT12-088", "BT12-088", "BT12-088", "BT4-098", "BT4-098", "BT4-098", "BT12-017", "BT12-017", "BT12-017", "BT12-017", "BT12-009", "BT12-009", "BT7-081", "BT7-081", "BT12-013", "BT12-013", "BT12-013", "BT1-090", "BT12-012", "BT12-012","BT12-012", "BT12-012","BT8-097", "BT8-097", "BT8-097","BT7-014", "BT7-014", "BT7-014", "BT7-014", "BT14-009", "BT14-009", "BT14-009", "BT7-011", "BT7-011", "BT7-011", "BT7-080", "BT7-080", "BT4-009", "BT5-008", "BT5-008", "BT5-008", "BT5-008", "BT7-008", "BT7-008", "BT7-008", "BT7-085", "BT7-085", "BT7-085", "BT7-085"];
+
 class PlayerHand {
   constructor() {
     this.hand = [];
@@ -97,6 +103,21 @@ function pickDNAVeemon() {
 function startGame() {
   playArea.hidden=false;
   hoverArea.hidden=true;
+  // Select all inputs with name="example"
+  let whoStarts = document.querySelector('input[name="whoStarts"]:checked').value;
+// Use Array.forEach to add an event listener to each radio element.
+  if (whoStarts == 1) {
+    alert("Draw 5");
+    let myHand = new PlayerHand();
+    let myDeck = new PlayerDeck();
+    for (let i = 0; i < 5; i++) {
+      myDeck[]
+
+    }
+    console.log("My hand is " + myHand[0]);
+  } else if (whoStarts ==2) {
+    alert("Draw 6");
+  }
 }
 //stuff i can do on unsuspend phase
 function unsuspend() {
