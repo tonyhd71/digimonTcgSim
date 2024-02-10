@@ -92,3 +92,8 @@ li{
 .eggDeck {
 	background-image: url("img/digiegg.png");
 }
+.secOverLap {
+	border:1px solid black;
+	height:105px;
+	width:75px;
+}
